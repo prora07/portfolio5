@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - Trendy Tees</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <div class="text-2xl font-bold">🧢 Trendy Tees</div>
+    <div class="space-x-6 hidden md:flex">
+      <a href="#" class="hover:text-blue-500">Home</a>
+      <a href="#products" class="hover:text-blue-500">Products</a>
+      <button onclick="toggleCart()" class="hover:text-blue-500">Cart 🛒 (<span id="cart-count">0</span>)</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-blue-200 text-center py-10">
+    <h1 class="text-4xl font-bold">Trendy Tees for Everyone</h1>
+    <p class="mt-2 text-lg">Fresh looks. Great prices.</p>
+  </header>
+
+  <!-- Product Listing -->
+  <section id="products" class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Product Card 1 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="999">
+      <img src="mi1.png" alt="Tee 1" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$999</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="999">
+      <img src="mi2.png" alt="Tee 2" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$999</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="899">
+      <img src="rcb1.png" alt="Tee 3" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$899</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="899">
+      <img src="rcb2.png" alt="Tee 4" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$899</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="799">
+      <img src="csk1.png" alt="Tee 5" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$799</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 6 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="799">
+      <img src="csk2.png" alt="Tee 6" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$799</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 7 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="500">
+      <img src="kurta.png" alt="Tee 7" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$500</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 8 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="600">
+      <img src="kurta2.png" alt="Tee 8" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$600</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 9 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="399">
+      <img src="pant.png" alt="Tee 9" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$399</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 10 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="Cool Tee" data-price="499">
+      <img src="pant2.png" alt="Tee 10" class="w-full">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Cool Tee</h3>
+        <p class="text-gray-600">$499</p>
+        <button onclick="addToCart(this)" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div id="cart" class="fixed top-0 right-0 w-80 h-full bg-white shadow-lg p-6 hidden flex-col z-50">
+    <h2 class="text-xl font-bold mb-4">Your Cart</h2>
+    <div id="cart-items" class="space-y-4"></div>
+    <div class="mt-4">
+      <p class="text-lg">Total: $<span id="cart-total">0</span></p>
+      <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Checkout</button>
+    </div>
+    <button onclick="toggleCart()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500">✖</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    <p>&copy; 2025 Trendy Tees | <a href="#" class="underline">About</a> | <a href="#" class="underline">Contact</a> | <a href="#" class="underline">Terms</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

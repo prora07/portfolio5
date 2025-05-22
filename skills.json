@@ -1,0 +1,8 @@
+[
+  { "name": "C Programming", "level": "Beginner" },
+  { "name": "SQL", "level": "Intermediate" },
+  { "name": ".NET with C#", "level": "Beginner" },
+  { "name": "HTML/CSS", "level": "Beginner" },
+  { "name": "JavaScript", "level": "Intermediate" }
+  
+]
